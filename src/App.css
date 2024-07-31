@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.arka-bg {
+    background: (180deg, #AF0D0D 0%, #570000 100%);
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mont-serif-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mont-serif-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content {
+    padding: 10px 20px;
+
+}
+
+.content ol li[data-list="bullet"] {
+    /* Your styles for bullet list items */
+    list-style-type: disc;
+    /* Example style */
+}
+
+/* Targeting elements with data-list="ordered" */
+.content ol li[data-list="ordered"] {
+    /* Your styles for ordered list items */
+    list-style-type: decimal;
+    /* Example style */
+}
+
+.content {
+    font-family: "Playfair Display", serif;
+}
+
+.content ol {
+
+    padding: 5px;
+
+}
+
+.rale{
+    font-family: "Raleway", sans-serif;
+}
+
+.ql-font-monospace {
+    font-family: "Space Mono", monospace;
+}
+
+.ql-font-serif {
+    font-family: "Noto Sans", sans-serif;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-images {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  .btn-redwhite{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .otlline{
+    font-size: 75px;
+    color: transparent;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: white;
+    
+  }
