@@ -18,14 +18,7 @@ import s4 from "./assets/s(4).png";
 import s5 from "./assets/s(5).png";
 import s6 from "./assets/s(6).png";
 import s7 from "./assets/s(7).png";
-import p1 from "../../assets/p1.png";
-import p2 from "../../assets/p2.png";
-import p3 from "../../assets/p3.png";
-import p4 from "../../assets/p4.png";
-import p5 from "../../assets/p5.png";
-import p6 from "../../assets/p6.png";
-import p7 from "../../assets/p7.png";
-import p8 from "../../assets/p8.png";
+
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -139,6 +132,11 @@ const LandingPage = () => {
                   Contact us
                 </a>
               </li>
+              <li>
+                <a className="font-medium hover:text-blue-300" href="/blog">
+                  Blogs
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -213,6 +211,9 @@ const LandingPage = () => {
               onClick={handleLinkClick}
             >
               Contact us
+            </a>
+            <a className="font-medium hover:text-blue-300" href="/blog">
+              Blogs
             </a>
           </div>
           <div className="social-icons flex justify-between space-x-4 p-4">
@@ -598,7 +599,7 @@ const LandingPage = () => {
           </h2>
         </div>
         <div
-          id="services"
+          id="service"
           className="get-unstuck lg:flex lg:text-[16px] lg:px-[64px] mont-serif-regular  h-fit"
         >
           <div className="lg:w-[40%] text-xl lg:text-[56px] leading-[60px] text-white mb-8 get-unstuck-text p-4 md:p-8 lg:p-12 mont-serif-bold font-black">
@@ -618,8 +619,8 @@ const LandingPage = () => {
         </div>
 
         <ul className="p-0 bg-[#7b0505]" id="cards">
-          <li className="card " id="card1">
-            <div className="card-body flex flex-col md:flex-row items-center relative service-card">
+          <li  className="card " id="card1">
+            <div  id="service" className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
                 <img src="./assets/marketing.png" alt="Advertising" />
               </div>
@@ -869,7 +870,10 @@ const LandingPage = () => {
             Know Us How Arka Works
           </h2>
         </div>
-        <div className="vision-container mont-serif-regular flex flex-col flex-wrap justify-center gap-8  rounded-lg text-[#AF0D0D]">
+        <div
+          id="work"
+          className="vision-container mont-serif-regular flex flex-col flex-wrap justify-center gap-8  rounded-lg text-[#AF0D0D]"
+        >
           <div className="vision-card p-6 rounded-lgb border-2 border-[#AF0D0D] rounded-md  w-full ">
             <div className="vision-card-num raleway text-4xl font-bold mb-4">
               01
@@ -1615,196 +1619,131 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
-      <div className="container max-w-none p-0 m-0">
-        <div
-          className="text-xl text-center bg-white font-bold py-4 text-red-600 mont-serif-regular"
-          style={{ color: "#7b0505" }}
-        >
-          Other Clients
-        </div>
-        <div className="clientshowsection bg-white py-8">
-          <div className="flex flex-wrap justify-center gap-4">
+      <div className="container bg-white max-w-none p-0 m-0">
+        <div className="bg-[white] text-black testimonial-section prodsection py-8">
+          <div className="sub-heading  text-center mb-12">
+            <h2 className=" text-3xl font-bold">Our Products</h2>
+          </div>
+
+          <div className="testimonial bg-[white] flex flex-wrap justify-center gap-1">
             {[
-              "cli9",
-              "cli1",
-              "cli2",
-              "cli3",
-              "cli5",
-              "cli6",
-              "cli7",
-              "cli8",
-            ].map((client, index) => (
-              <div key={index} className="client-logo-container p-2">
-                <img
-                  src={`./assets/Clients/${client}.svg`}
-                  alt={`Client ${index + 1}`}
-                />
+              {
+                name: "LEAD GEN BOT",
+                title: ` A fully integrated AI chatbot 
+for you sites and other platforms,
+ that can talk to your potential
+ leads, book meetings and
+ convert visitors to clients`,
+                image: "../../assets/p1.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "CUSTOMER SERVICE BOT",
+                title: ` This bot that will provide no delay
+ personalized responses to all of
+ your customers.It can manage
+ ticket creation, handling and
+ support requests on its own`,
+                image: "../../assets/p2.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "VOICE ASSISTANT BOT",
+                title: `Get a personalized voice assistant
+ bot to handle all your clients' and
+ employees' queries. Unleash the
+ power of customised bot for your
+ business`,
+                image: "../../assets/p3.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: " SOCIAL MEDIA AUTOMATION BOT",
+                title: `This bot can completely boost
+ and manage your social media
+ like a human manager.It can
+ create content according to your
+ need, post and it and analyse the
+ metrics to update its strategy.`,
+                image: "../../assets/p4.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "TREND ANALYSIS BOT",
+                title: `This bot analyzes all the ongoing
+ trends in the market and gives
+ you specific suggestion  on how
+ to use those trends to help you
+ business go viral and create
+ trending products and services.`,
+                image: "../../assets/p5.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "SALES PREDICTION BOT",
+                title: `This bot analyses the
+ performance of your sales team,
+ and their past metric like closure
+ rate, follow-up metric, etc. to give
+ you an accurate prediction for
+ your sales each month.`,
+                image: "../../assets/p6.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "VOICE CALL BOT",
+                title: `A voice call bot that is nearly
+ impossible to differentiate from a
+ human voice, which can help
+ your business in multiple
+ channels like sales, lead
+ generation,customer support etc`,
+                image: "../../assets/p7.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+              {
+                name: "AI DRIVEN CRM WEBSITE",
+                title: `Get the power of AI, to make a
+ personalized CRM website for your
+ needs that does all of the hard work
+ for you so you are left with the time for
+ only the most important tasks.`,
+                image: "../../assets/p8.png",
+                email: "bhavya@arkaconsultancy.xyz",
+              },
+            ].map((founder, index) => (
+              <div
+                key={index}
+                className="relative h-[400px]  founder-container"
+              >
+                <div className="card">
+                  <div className="content">
+                    <div className="imgBx">
+                      <img className="rounded-full" src={founder.image} />
+                    </div>
+                    <div className="contentBx">
+                      <h3 className="mont-serif-bold w-full text-center">
+                        {founder.name}
+                      </h3>
+                    </div>
+                  </div>
+                  <ul className="sci">
+                    <li className="whiteglass">
+                      <h3 className="mont-serif-bold w-full text-center">
+                        {founder.name}
+                      </h3>
+                      <h2 className="mont-serif-regular w-full text-justify">
+                        {founder.title}
+                      </h2>
+                    </li>
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
         </div>
-        {/* <div className="flex flex-wrap justify-center gap-4 py-8">
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-[200px] aspect-square overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src={p1}
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="da h-[400px] relative flex  flex-col justify-center overflow-hidden bg-gray-50">
-            <div className="absolute inset-0 bg-center dark:bg-black"></div>
-            <div className="group relative m-0 flex h-[800px] w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-              <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                <img
-                  src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
-                  className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                  alt=""
-                />
-              </div>
-              <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
-                  Azores
-                </h1>
-                <h1 className="text-sm font-light text-gray-200 shadow-xl">
-                  A Little Paradise in Portugal
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div> */}
+      </div>
+      <div className="container bg-white max-w-none p-0 m-0">
         <div className="bg-[#7b0505] text-white testimonial-section py-8">
           <div className="sub-heading  text-center mb-12">
             <h2 className=" text-3xl font-bold">
@@ -1976,7 +1915,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="/blog"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         Blogs
@@ -1991,7 +1930,7 @@ const LandingPage = () => {
                   <ul className="mt-2 space-y-2">
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         Graphic Designing
@@ -1999,7 +1938,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         Web development
@@ -2007,7 +1946,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         App development
@@ -2015,7 +1954,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         UI/UX
@@ -2023,7 +1962,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         SEO
@@ -2031,7 +1970,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         Content creation
@@ -2039,7 +1978,7 @@ const LandingPage = () => {
                     </li>
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         Email marketing
@@ -2048,7 +1987,7 @@ const LandingPage = () => {
 
                     <li>
                       <a
-                        href="/"
+                        href="#service"
                         className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                       >
                         sales
