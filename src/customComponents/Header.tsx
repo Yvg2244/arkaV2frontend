@@ -115,8 +115,10 @@ const Header = () => {
           <div className="flex noScrollbarsClassName justify-between space-x-4 p-2 lg:p-4">
             {categories?.map((categorie: any) => (
               <div className=" noScrollbarsClassName overflow-hidden text-center text-[14px] lg:text-[18px] min-w-[100px] lg:min-w-[200px] w-fit rounded-md">
-                <Link to={`/`}>
-                {/* <Link to={`/category/${encodeURIComponent(categorie?.category)}`}> */}
+                {/* <Link to={`/`}> */}
+                <Link
+                  to={`/category/${encodeURIComponent(categorie?.category)}`}
+                >
                   {categorie?.category}
                 </Link>
               </div>
