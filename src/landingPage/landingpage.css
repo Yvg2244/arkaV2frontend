@@ -255,6 +255,11 @@
   
 
 }
+/* .clientcardbody {
+
+  height: fit-content;
+ 
+} */
 .card-bodyv2 {
   width: 100%;
   background-color: white;
@@ -357,6 +362,16 @@
   .card-body:nth-child(odd) {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 35rem;
+  }
+
+  .card-body {
+  
+    justify-content: flex-start;
+
+    height: 35rem;
   }
 
   /* .card-body {
@@ -404,7 +419,8 @@ padding-bottom: 10px;
     -webkit-text-stroke-color: black;
 }
 .df{
-  width: 50rem;
+  width: 100%;
+
 }
 
 
@@ -416,4 +432,41 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(13.3px);
 -webkit-backdrop-filter: blur(13.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+ul.animate-scroll {
+  display: flex;
+  width: calc(100% * 2); /* Double the width to allow for seamless scrolling */
+}
+
+
+ul.animate-scroll li {
+  width: auto;
+}
+.case-study h1{
+  font-weight: 700;
+}
+.case-study h2{
+  font-weight: 500;
+}
+.case-study strong{
+  font-weight: 500;
+}
+@media screen and (max-width:600px) {
+  .clientcard,clientcardbody{
+   
+    height: fit-content;
+  }
 }
