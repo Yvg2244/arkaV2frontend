@@ -18,34 +18,7 @@ import s4 from "./assets/s(4).png";
 import s5 from "./assets/s(5).png";
 import s6 from "./assets/s(6).png";
 import s7 from "./assets/s(7).png";
-import p1 from "./assets/p1.png";
-import p2 from "./assets/p2.png";
-import p3 from "./assets/p3.png";
-import p4 from "./assets/p4.png";
-import p5 from "./assets/p5.png";
-import p6 from "./assets/p6.png";
-import p7 from "./assets/p7.png";
-import p8 from "./assets/p8.png";
-import logo from "./assets/logo.png";
-import bigLogo from "./assets/new logo.webp";
-import ig from "./assets/Instagram.png";
-import wa from "./assets/WhatsApp.png";
-import fb from "./assets/Facebook.png";
-import developement from "./assets/devlopement.png";
-import aiSe from "./assets/aiSe.png";
-import salesSection from "./assets/SalesSecton.png";
-import image from "./assets/image.png";
-import se from "./assets/se.png";
-import social from "./assets/social.png";
-import contentCreation from "./assets/contentCreation.png";
-import marketing from "./assets/marketing.png";
-import saleup from "./assets/Saleup.png";
-import sharpEye from "./assets/SharpEyye.png";
-import mboso from "./assets/Mboso.png";
-import elite from "./assets/elite.png";
-import crown from "./assets/Crown.png";
-import rocket from "./assets/Rocket.png";
-import diamond from "./assets/Diamond.png";
+
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -130,7 +103,7 @@ const LandingPage = () => {
       <header className="relative mont-serif-regular">
         <div className="navbar flex items-center justify-between px-8 py-4 bg-[#7b0505] text-white">
           <div className="logo  h-16 md:h-24 w-auto bg-white rounded-full p-2">
-            <img src={logo} alt="Logo" className="h-full w-auto" />
+            <img src="./assets/logo.png" alt="Logo" className="h-full w-auto" />
           </div>
           <nav className="hidden md:block md:flex">
             <ul className="flex space-x-8">
@@ -169,13 +142,17 @@ const LandingPage = () => {
 
           <div className="social-icons hidden md:flex space-x-4">
             <a href="https://www.facebook.com/people/Arka-Consultancy/61561972474059/">
-              <img src={fb} alt="Facebook" className="h-6" />
+              <img src="./assets/Facebook.png" alt="Facebook" className="h-6" />
             </a>
             <a href="https://wa.me/+917087843059">
-              <img src={wa} alt="WhatsApp" className="h-6" />
+              <img src="./assets/WhatsApp.png" alt="WhatsApp" className="h-6" />
             </a>
             <a href="https://www.instagram.com/arkaconsultancyandco/">
-              <img src={ig} alt="Instagram" className="h-6" />
+              <img
+                src="./assets/Instagram.png"
+                alt="Instagram"
+                className="h-6"
+              />
             </a>
             <a href="https://x.com/ConsultancyArka">
               <img src={Twitter} alt="Twitter" className="h-6" />
@@ -241,13 +218,17 @@ const LandingPage = () => {
           </div>
           <div className="social-icons flex justify-between space-x-4 p-4">
             <a href="https://www.facebook.com/people/Arka-Consultancy/61561972474059/">
-              <img src={fb} alt="Facebook" className="h-6" />
+              <img src="./assets/Facebook.png" alt="Facebook" className="h-6" />
             </a>
             <a href="https://wa.me/+917087843059">
-              <img src={wa} alt="WhatsApp" className="h-6" />
+              <img src="./assets/WhatsApp.png" alt="WhatsApp" className="h-6" />
             </a>
             <a href="https://www.instagram.com/arkaconsultancyandco/">
-              <img src={ig} alt="Instagram" className="h-6" />
+              <img
+                src="./assets/Instagram.png"
+                alt="Instagram"
+                className="h-6"
+              />
             </a>
             <a href="https://x.com/ConsultancyArka">
               <img src={Twitter} alt="Twitter" className="h-6" />
@@ -280,7 +261,7 @@ const LandingPage = () => {
         </div>
         <div className="illustration max-w-sm lg:max-w-md animate-slideInFromRight">
           <img
-            src={bigLogo}
+            src="./assets/new logo.webp"
             alt="Illustration of team"
             className="w-full h-auto"
           />
@@ -311,243 +292,298 @@ const LandingPage = () => {
         <a href="#contact" className=" lightbtn font-bold">
           Contact Us
         </a>
-        <main className="relative h-[fit-content] flex flex-col justify-center overflow-hidden">
-          <div className="w-[100vw] mx-auto px-4 md:px-6 py-24">
-            <div className="text-center">
-              <div className="w-full overflow-hidden">
-                <ul className="flex items-center justify-start space-x-6 animate-scroll">
-                  <li className="shrink-0 flex flex-col justify-start items-center items-center align">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s1}
-                      alt="Facebook"
-                    />
-                    <span>Sales</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center w-[150px] h-fit">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s2}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">AI</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s3}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s4}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s5}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Developement</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s6}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Email Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s7}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s1}
-                      alt="Facebook"
-                    />
-                    <span>Sales</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center w-[150px] h-fit">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s2}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">AI</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s3}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s4}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s5}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Developement</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s6}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Email Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s7}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s1}
-                      alt="Facebook"
-                    />
-                    <span>Sales</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center w-[150px] h-fit">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s2}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">AI</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s3}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s4}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s5}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Developement</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s6}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Email Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s7}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>{" "}
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s1}
-                      alt="Facebook"
-                    />
-                    <span>Sales</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center w-[150px] h-fit">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s2}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">AI</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s3}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s4}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s5}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Developement</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s6}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Email Marketing</span>
-                  </li>
-                  <li className="shrink-0 flex flex-col justify-start items-center">
-                    <img
-                      className="h-[100px] w-[100px] rounded-full  aspect-square"
-                      src={s7}
-                      alt="Facebook"
-                    />
-                    <span className="w-[150px]">Content Creation</span>
-                  </li>
-                </ul>
+        <div className="scroll-container">
+          <div className="scroll-images mt-8 overflow-hidden w-[100vw]">
+            <div className="flex-shrink-0 p-2">
+              <img src={s1} alt={`Client`} className="w-32 h-32 object-cover" />
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s2}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">AI</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s3}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">Marketing</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s4}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Content Creation
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s5}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">SEO</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s6}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Email Marketing
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s7}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Social Media
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img src={s1} alt={`Client`} className="w-32 h-32 object-cover" />
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s2}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">AI</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s3}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">Marketing</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s4}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Content Creation
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s5}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">SEO</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s6}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Email Marketing
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s7}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Social Media
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img src={s1} alt={`Client`} className="w-32 h-32 object-cover" />
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s2}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">AI</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s3}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">Marketing</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s4}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Content Creation
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s5}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">SEO</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s6}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Email Marketing
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s7}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Social Media
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img src={s1} alt={`Client`} className="w-32 h-32 object-cover" />
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s2}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">AI</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s3}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">Marketing</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s4}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Content Creation
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s5}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">SEO</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s6}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Email Marketing
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s7}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Social Media
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img src={s1} alt={`Client`} className="w-32 h-32 object-cover" />
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s2}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">AI</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s3}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center font-semibold">Marketing</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s4}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Content Creation
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s5}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">SEO</div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s6}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Email Marketing
+              </div>
+            </div>
+            <div className="flex-shrink-0 p-2">
+              <img
+                src={s7}
+                alt={`Client`}
+                className="w-32 h-32 object-cover rounded-[100%]"
+              />
+              <div className="text-center w-[100%] font-semibold">
+                Social Media
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </section>
 
-      <section className="container w-[100vw] max-w-none bg-[#7b0505] p-0 px-0 lg:px-32 m-0">
+      <section className="container w-[100vw] max-w-none bg-[#7b0505] p-0 px-4 lg:px-32 m-0">
         <div className="sub-heading">
           <div
             className="text-lg text-center font-bold py-4 text-red-600 mont-serif-regular"
@@ -583,13 +619,10 @@ const LandingPage = () => {
         </div>
 
         <ul className="p-0 bg-[#7b0505]" id="cards">
-          <li className="card " id="card1">
-            <div
-              id="service"
-              className="card-body flex flex-col md:flex-row items-center relative service-card"
-            >
+          <li  className="card " id="card1">
+            <div  id="service" className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={marketing} alt="Advertising" />
+                <img src="./assets/marketing.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 ">
@@ -614,7 +647,7 @@ const LandingPage = () => {
           <li className="card " id="card2">
             <div className="card-body items-center md:flex-row-reverse relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={contentCreation} alt="Advertising" />
+                <img src="./assets/contentCreation.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -641,7 +674,7 @@ const LandingPage = () => {
           <li className="card " id="card3">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={salesSection} alt="Advertising" />
+                <img src="./assets/SalesSecton.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df ">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -667,7 +700,7 @@ const LandingPage = () => {
           <li className="card " id="card4">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={social} alt="Advertising" />
+                <img src="./assets/social.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -693,7 +726,7 @@ const LandingPage = () => {
           <li className="card " id="card5">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={se} alt="Advertising" />
+                <img src="./assets/se.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -720,7 +753,7 @@ const LandingPage = () => {
           <li className="card " id="card2">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={image} alt="Advertising" />
+                <img src="./assets/image.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -747,7 +780,7 @@ const LandingPage = () => {
           <li className="card " id="card3">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={salesSection} alt="Advertising" />
+                <img src="./assets/SalesSecton.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -772,7 +805,7 @@ const LandingPage = () => {
           <li className="card " id="card4">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={aiSe} alt="Advertising" />
+                <img src="./assets/aiSe.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0 max-w-[480px]">
@@ -798,7 +831,7 @@ const LandingPage = () => {
           <li className="card " id="card1">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={developement} alt="Advertising" />
+                <img src="./assets/devlopement.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" SecText-num otlline text-shadow-outline-white rale absolute top-0 left-0">
@@ -846,7 +879,11 @@ const LandingPage = () => {
               01
             </div>
             <div className="mb-4">
-              <img src={diamond} alt="Vision" className="mx-auto" />
+              <img
+                src="./assets/Diamond.png"
+                alt="Vision"
+                className="mx-auto"
+              />
             </div>
             <div className="text-xl font-semibold mb-2">VISION</div>
             <div className="text-base text-black text-justify">
@@ -862,7 +899,7 @@ const LandingPage = () => {
               02
             </div>
             <div className="mb-4">
-              <img src={rocket} alt="Vision" className="mx-auto" />
+              <img src="./assets/Rocket.png" alt="Vision" className="mx-auto" />
             </div>
             <div className="text-xl font-semibold mb-2">MISSION</div>
             <div className="text-base text-black text-justify">
@@ -879,7 +916,7 @@ const LandingPage = () => {
               03
             </div>
             <div className="mb-4">
-              <img src={crown} alt="Vision" className="mx-auto" />
+              <img src="./assets/Crown.png" alt="Vision" className="mx-auto" />
             </div>
             <div className="text-xl font-semibold mb-2">LEGACY</div>
             <div className="text-base text-black text-justify">
@@ -902,7 +939,7 @@ const LandingPage = () => {
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={elite} alt="Advertising" />
+                <img src="./assets/elite.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
@@ -912,7 +949,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Elite Group Finances
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription mont-serif-regular text-justify text-[20px]">
                   EliteGroup Finances, originally an offline financial auditing
                   firm, partnered with Revibe Academy to transition successfully
                   into the online sphere. Challenges included limited online
@@ -928,11 +965,11 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">
+                        <h1>
                           EliteGroup Finances: Transitioning to the Digital Era
                         </h1>
-
-                        <h2 className="font-[700] my-2">Introduction:</h2>
+                        <br />
+                        <h2>Introduction:</h2>
                         <p>
                           EliteGroup Finances started with a simple but
                           in-demand service, ‘Company’s financial audits’. The
@@ -944,8 +981,8 @@ const LandingPage = () => {
                           completely off-the-grid company to the vast world of
                           digital media.
                         </p>
-
-                        <h2 className="font-[700] my-2">Challenges:</h2>
+                        <br />
+                        <h2>Challenges:</h2>
                         <p>
                           Transitioning from an offline to an online business
                           model presented several challenges for EliteGroup
@@ -977,8 +1014,8 @@ const LandingPage = () => {
                             to stand out.
                           </li>
                         </ul>
-
-                        <h2 className="font-[700] my-2">Our Approach:</h2>
+                        <br />
+                        <h2>Our Approach:</h2>
                         <p>
                           Arka (then Revibe) was engaged to facilitate
                           EliteGroup Finances' transition to the digital realm.
@@ -1023,8 +1060,8 @@ const LandingPage = () => {
                             into clients.
                           </li>
                         </ol>
-
-                        <h2 className="font-[700] my-2">Results:</h2>
+                        <br />
+                        <h2>Results:</h2>
                         <ul>
                           <li>
                             <strong>Increased Leads:</strong> Over time, leads
@@ -1050,8 +1087,8 @@ const LandingPage = () => {
                             significant business expansion.
                           </li>
                         </ul>
-
-                        <h2 className="font-[700] my-2">Conclusion:</h2>
+                        <br />
+                        <h2>Conclusion:</h2>
                         <p>
                           The partnership between EliteGroup Finances and Revibe
                           Academy proved to be transformative, enabling the
@@ -1075,7 +1112,7 @@ const LandingPage = () => {
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={mboso} alt="Advertising" />
+                <img src="./assets/Mboso.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
@@ -1085,7 +1122,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Moboso Enterprises
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription mont-serif-regular text-justify text-[20px]">
                   Mboso, a former software engineer turned coffee entrepreneur,
                   sought to enhance his coffee brand's Instagram presence.
                   Initially focused solely on design services, he faced
@@ -1100,9 +1137,9 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">Fulfilling Every Coffee Lover’s Dream</h1>
-
-                        <h2 className="font-[700] my-2">Introduction:</h2>
+                        <h1>Fulfilling Every Coffee Lover’s Dream</h1>
+                        <br />
+                        <h2>Introduction:</h2>
                         <p>
                           Mr. Mboso started as a software engineer but soon
                           realized entrepreneurship was his true calling. He
@@ -1125,8 +1162,8 @@ const LandingPage = () => {
                           this, so we asked Mboso for an online meeting. Mboso
                           agreed and there he told us what was wrong.
                         </p>
-
-                        <h2 className="font-[700] my-2">Challenges:</h2>
+                        <br />
+                        <h2>Challenges:</h2>
                         <p>
                           While working as a software engineer, amidst the hum
                           of technology and the glow of computer screens, Mboso
@@ -1168,8 +1205,8 @@ const LandingPage = () => {
                           to save a person who otherwise would have to go back
                           to something that pushed him to the edge.
                         </p>
-
-                        <h2 className="font-[700] my-2">Our Approach:</h2>
+                        <br />
+                        <h2>Our Approach:</h2>
                         <ol>
                           <li>
                             <strong>Uniqueness:</strong> We started with
@@ -1204,8 +1241,8 @@ const LandingPage = () => {
                             office workers.
                           </li>
                         </ol>
-
-                        <h2 className="font-[700] my-2">Results:</h2>
+                        <br />
+                        <h2>Results:</h2>
                         <ul>
                           <li>
                             After the 1st week of running our social media
@@ -1224,8 +1261,8 @@ const LandingPage = () => {
                             Enterprises was a success.
                           </li>
                         </ul>
-
-                        <h2 className="font-[700] my-2">Conclusion:</h2>
+                        <br />
+                        <h2>Conclusion:</h2>
                         <p>
                           Mboso’s case was a matter of huge learning for us. We
                           understood how stories sold more than products. It
@@ -1245,7 +1282,7 @@ const LandingPage = () => {
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={sharpEye} alt="Advertising" />
+                <img src="./assets/SharpEyye.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
@@ -1255,7 +1292,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Sharp Eye
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription mont-serif-regular text-justify text-[20px]">
                   At Arka Consultancy, our journey with Sharp Eye Solution
                   Company (SESC) transformed their digital security approach.
                   Initially challenged by ineffective marketing and visibility
@@ -1274,12 +1311,12 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">
+                        <h1>
                           Shaping the Digital World’s Security: Sharp Eye
                           Solution Company (SESC)
                         </h1>
-
-                        <h2 className="font-[700] my-2">Introduction:</h2>
+                        <br />
+                        <h2>Introduction:</h2>
                         <p>
                           Sharp Eye Solution Company (SESC) is a digital
                           security firm specializing in providing advanced
@@ -1289,8 +1326,8 @@ const LandingPage = () => {
                           initially faced challenges in effectively reaching and
                           acquiring new clients despite its innovative services.
                         </p>
-
-                        <h2 className="font-[700] my-2">Challenges:</h2>
+                        <br />
+                        <h2>Challenges:</h2>
                         <p>
                           Despite offering cutting-edge digital security
                           services, SESC struggled with its marketing efforts.
@@ -1303,8 +1340,8 @@ const LandingPage = () => {
                           and enhance client acquisition, SESC solicited Arka
                           Consultancy.
                         </p>
-
-                        <h2 className="font-[700] my-2">Our Approach:</h2>
+                        <br />
+                        <h2>Our Approach:</h2>
                         <ul>
                           <li>
                             <strong>
@@ -1361,8 +1398,8 @@ const LandingPage = () => {
                             the ROI of marketing investments.
                           </li>
                         </ul>
-
-                        <h2 className="font-[700] my-2">Results:</h2>
+                        <br />
+                        <h2>Results:</h2>
                         <ul>
                           <li>
                             <strong>Enhanced Digital Presence:</strong> SESC's
@@ -1393,8 +1430,8 @@ const LandingPage = () => {
                             decision-making for SESC.
                           </li>
                         </ul>
-
-                        <h2 className="font-[700] my-2">Conclusion:</h2>
+                        <br />
+                        <h2>Conclusion:</h2>
                         <p>
                           Through a trustful and collaborative work association
                           with us, Sharp Eye Solution Company successfully
@@ -1440,7 +1477,7 @@ const LandingPage = () => {
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
               <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={saleup} alt="Advertising" />
+                <img src="./assets/Saleup.png" alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
@@ -1450,7 +1487,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Sales Up Co
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription mont-serif-regular text-justify text-[20px]">
                   The #1 automated marketing tool for email database expansion
                   This web app specializes in enhancing the customer experience,
                   and adding marketing value to events and venue owners! The
@@ -1466,9 +1503,10 @@ const LandingPage = () => {
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
-                      <h1 className="mont-serif-bold text-xl">Increasing Sales of SalesUp!</h1>
-
-                      <h2 className="font-[700] my-2">Introduction:</h2>
+                    <div className="case-study">
+                      <h1>Increasing Sales of SalesUp!</h1>
+                      <br />
+                      <h2>Introduction:</h2>
                       <p>
                         This is the case of SalesUp, an Indian startup with a
                         vision to revolutionize affiliate marketing. The startup
@@ -1478,8 +1516,8 @@ const LandingPage = () => {
                         goals, we started analyzing their social media. They
                         wanted to generate leads through social media.
                       </p>
-
-                      <h2 className="font-[700] my-2">Challenges:</h2>
+                      <br />
+                      <h2>Challenges:</h2>
                       <p>
                         We figured out the problems they were having. They were
                         the following:
@@ -1496,8 +1534,8 @@ const LandingPage = () => {
                         <li>There was no regularity in posting.</li>
                         <li>And a few more.</li>
                       </ul>
-
-                      <h2 className="font-[700] my-2">Our Approach:</h2>
+                      <br />
+                      <h2>Our Approach:</h2>
                       <ol>
                         <li>
                           <strong>New Strategies:</strong> We made new social
@@ -1531,8 +1569,8 @@ const LandingPage = () => {
                           engaging with followers and other creators.
                         </li>
                       </ol>
-
-                      <h2 className="font-[700] my-2">Results:</h2>
+                      <br />
+                      <h2>Results:</h2>
                       <ul>
                         <li>
                           Within a week of rebranding and changing their social
@@ -1557,8 +1595,8 @@ const LandingPage = () => {
                           had a network of 500+ people.
                         </li>
                       </ul>
-
-                      <h2 className="font-[700] my-2">Conclusion:</h2>
+                      <br />
+                      <h2>Conclusion:</h2>
                       <p>
                         These specific strategies for things that most people
                         ignore and that SalesUp was ignoring too, helped the
@@ -1574,6 +1612,7 @@ const LandingPage = () => {
                         broaden our vision. One such company was Mboso
                         Enterprises.
                       </p>
+                      </div>
                     </ScrollArea>
                   </DialogContent>
                 </Dialog>
@@ -1597,7 +1636,7 @@ for you sites and other platforms,
  that can talk to your potential
  leads, book meetings and
  convert visitors to clients`,
-                image: p1,
+                image: "../../assets/p1.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1607,7 +1646,7 @@ for you sites and other platforms,
  your customers.It can manage
  ticket creation, handling and
  support requests on its own`,
-                image: p2,
+                image: "../../assets/p2.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1617,7 +1656,7 @@ for you sites and other platforms,
  employees' queries. Unleash the
  power of customised bot for your
  business`,
-                image: p3,
+                image: "../../assets/p3.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1628,7 +1667,7 @@ for you sites and other platforms,
  create content according to your
  need, post and it and analyse the
  metrics to update its strategy.`,
-                image: p4,
+                image: "../../assets/p4.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1639,7 +1678,7 @@ for you sites and other platforms,
  to use those trends to help you
  business go viral and create
  trending products and services.`,
-                image: p5,
+                image: "../../assets/p5.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1650,7 +1689,7 @@ for you sites and other platforms,
  rate, follow-up metric, etc. to give
  you an accurate prediction for
  your sales each month.`,
-                image: p6,
+                image: "../../assets/p6.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1661,7 +1700,7 @@ for you sites and other platforms,
  your business in multiple
  channels like sales, lead
  generation,customer support etc`,
-                image: p7,
+                image: "../../assets/p7.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
@@ -1671,7 +1710,7 @@ for you sites and other platforms,
  needs that does all of the hard work
  for you so you are left with the time for
  only the most important tasks.`,
-                image: p8,
+                image: "../../assets/p8.png",
                 email: "bhavya@arkaconsultancy.xyz",
               },
             ].map((founder, index) => (
@@ -1756,6 +1795,122 @@ for you sites and other platforms,
             ))}
           </div>
         </div>
+{/* Our team members starts */}
+<div className="tsOverall">
+<div className="tscardone">
+<div className="tscard work">
+            <div className="tsimg-section">
+              <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                <path fill-rule="nonzero" fill="#AF0D0D"
+                  d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                </path>
+              </svg>
+            </div>
+            <div  className ="tscard-desc">
+              <div className ="tscard-header">
+                <div className ="tscard-title">Web Development Team</div>
+                <div className ="tscard-menu">
+                  <div  className ="dot"></div>
+                  <div className ="dot"></div>
+                  <div className ="dot"></div>
+                </div>
+              </div>
+              <div className ="tscard-time">12+ Team Members</div>
+            </div>
+          </div>
+
+          <div className="tscard work">
+            <div className="tsimg-section">
+              <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                <path fill-rule="nonzero" fill="#AF0D0D"
+                  d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                </path>
+              </svg>
+            </div>
+            <div  className ="tscard-desc">
+              <div className ="tscard-header">
+                <div className ="tscard-title">Social Media</div>
+                <div className ="tscard-menu">
+                  <div  className ="dot"></div>
+                  <div className ="dot"></div>
+                  <div className ="dot"></div>
+                </div>
+              </div>
+              <div className ="tscard-time">12+ Team Members</div>
+            </div>
+          </div>
+</div>
+<div >
+<div className="tscardone">
+          <div className="tscard work">
+            <div className="tsimg-section">
+              <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                <path fill-rule="nonzero" fill="#AF0D0D"
+                  d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                </path>
+              </svg>
+            </div>
+            
+            <div  className ="tscard-desc">
+              <div className ="tscard-header">
+                <div className ="tscard-title">Techincal Department</div>
+                <div className ="tscard-menu">
+                  <div  className ="dot"></div>
+                  <div className ="dot"></div>
+                  <div className ="dot"></div>
+                </div>
+              </div>
+              <div className ="tscard-time">90+ Team Members</div>
+            </div>
+          </div>
+
+          <div className="tscard work">
+            <div className="tsimg-section">
+              <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                <path fill-rule="nonzero" fill="#AF0D0D"
+                  d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                </path>
+              </svg>
+            </div>
+            <div  className ="tscard-desc">
+              <div className ="tscard-header">
+                <div className ="tscard-title">Marketing Department</div>
+                <div className ="tscard-menu">
+                  <div  className ="dot"></div>
+                  <div className ="dot"></div>
+                  <div className ="dot"></div>
+                </div>
+              </div>
+              <div className ="tscard-time">90+ Team Members</div>
+            </div>
+          </div>
+          </div>
+
+          <div className="tscardtwo">
+          <div className="tscard work">
+            <div className="tsimg-section">
+              <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                <path fill-rule="nonzero" fill="#AF0D0D"
+                  d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                </path>
+              </svg>
+            </div>
+            <div  className ="tscard-desc">
+              <div className ="tscard-header">
+                <div className ="tscard-title">Management </div>
+                <div className ="tscard-menu">
+                  <div  className ="dot"></div>
+                  <div className ="dot"></div>
+                  <div className ="dot"></div>
+                </div>
+              </div>
+              <div className ="tscard-time">10+ Team Members</div>
+            </div>
+          </div>
+          </div>
+</div>
+</div>
+{/* Our team members starts */}
 
         <div
           id="contact"
@@ -1833,7 +1988,7 @@ for you sites and other platforms,
         <div className="relative  md:px-[px] text-[14px] sm:flex sm:flex-col sm:items-center bg-[#7b0505] md:flex-row text-white mont-serif-regular p-0 m-0">
           <div className="w-[100%] md:w-[40%] mb-8 flex flex-col justify-center">
             <div className="w-[100%] flex flex-col items-center">
-              <img className=" w-[300px]" src={bigLogo}></img>
+              <img className=" w-[300px]" src={"./assets/new logo.webp"}></img>
             </div>
             <div className="w-[100%] flex justify-center">
               <a

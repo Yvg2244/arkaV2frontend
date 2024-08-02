@@ -10,18 +10,50 @@
 }
 
 .image-strip {
-  width: calc(100% * 2); /* Twice the width to accommodate duplicated images */
+  width: calc(100% * 2); /*Twice the width to accommodate duplicated images*/
   animation: scroll 20s linear infinite;
 }
 
+
 @keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.scroll-container{
+    flex: 1;
+    width: 100vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-images {
+    display: flex;
+    gap: 40px;
+    width: calc(100%* 2);
+    animation: scroll 40s linear infinite;
+}
+.flex-shrink{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+/* @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
   }
-}
+} */
 .robo{
   font-family: "Roboto", sans-serif;
 }
@@ -255,11 +287,6 @@
   
 
 }
-/* .clientcardbody {
-
-  height: fit-content;
- 
-} */
 .card-bodyv2 {
   width: 100%;
   background-color: white;
@@ -362,16 +389,6 @@
   .card-body:nth-child(odd) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
-    height: 35rem;
-  }
-
-  .card-body {
-  
-    justify-content: flex-start;
-
-    height: 35rem;
   }
 
   /* .card-body {
@@ -419,8 +436,7 @@ padding-bottom: 10px;
     -webkit-text-stroke-color: black;
 }
 .df{
-  width: 100%;
-
+  width: 50rem;
 }
 
 
@@ -433,40 +449,82 @@ backdrop-filter: blur(13.3px);
 -webkit-backdrop-filter: blur(13.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
-.animate-scroll {
-  animation: scroll 30s linear infinite;
-}
-
-ul.animate-scroll {
-  display: flex;
-  width: calc(100% * 2); /* Double the width to allow for seamless scrolling */
-}
-
-
-ul.animate-scroll li {
-  width: auto;
-}
 .case-study h1{
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 20px;
 }
+
 .case-study h2{
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 15px;
 }
+
 .case-study strong{
   font-weight: 500;
 }
-@media screen and (max-width:600px) {
-  .clientcard,clientcardbody{
-   
-    height: fit-content;
-  }
+
+
+.tsOverall{
+  background-color:  rgb(123 5 5);
+}
+
+.tscardone{
+  margin-left: 2%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  gap: 3rem;
+}
+
+.tscardtwo{
+  margin-left: 13%;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tscard {
+  font-family: "Arial";
+  color: #fff;
+  display: grid;
+  cursor: pointer;
+  grid-template-rows: 50px 1fr;
+}
+
+.tscard {
+  --primary-clr: #AF0D0D;
+  --dot-clr: #BBC0FF;
+  width: 70vw;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.tscard-desc {
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  top: -10px;
+  display: grid;
+  gap: 10px;
+  background: var(--primary-clr);
+}
+
+.tsimg-section {
+  align-self: center;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: hsl(0, 74%, 62%);
+}
+
+.tscard-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tscard-time{
+  font-weight: 300;
+  font-size: 30px;
 }
