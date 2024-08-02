@@ -47,6 +47,7 @@ import crown from "./assets/Crown.png";
 import rocket from "./assets/Rocket.png";
 import diamond from "./assets/Diamond.png";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
+import ChatBubble from "../components/section/ChatBubble.tsx";
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -132,6 +133,7 @@ const LandingPage = () => {
           <div className="logo  h-16 md:h-24 w-auto bg-white rounded-full p-2">
             <img src={logo} alt="Logo" className="h-full w-auto" />
           </div>
+          <ChatBubble />
           <nav className="hidden md:block md:flex">
             <ul className="flex space-x-8">
               <li>
@@ -1100,7 +1102,9 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">Fulfilling Every Coffee Lover’s Dream</h1>
+                        <h1 className="mont-serif-bold text-xl">
+                          Fulfilling Every Coffee Lover’s Dream
+                        </h1>
 
                         <h2 className="font-[700] my-2">Introduction:</h2>
                         <p>
@@ -1466,7 +1470,9 @@ const LandingPage = () => {
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
-                      <h1 className="mont-serif-bold text-xl">Increasing Sales of SalesUp!</h1>
+                      <h1 className="mont-serif-bold text-xl">
+                        Increasing Sales of SalesUp!
+                      </h1>
 
                       <h2 className="font-[700] my-2">Introduction:</h2>
                       <p>
