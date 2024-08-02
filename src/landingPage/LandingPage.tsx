@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Twitter from "./assets/TwitterX.png";
 import { InlineWidget } from "react-calendly";
 import { MdEmail } from "react-icons/md";
+import Bot from "../Bot";
 import {
   Accordion,
   AccordionContent,
@@ -47,6 +48,8 @@ import crown from "./assets/Crown.png";
 import rocket from "./assets/Rocket.png";
 import diamond from "./assets/Diamond.png";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
+
+
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -1100,7 +1103,9 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">Fulfilling Every Coffee Lover’s Dream</h1>
+                        <h1 className="mont-serif-bold text-xl">
+                          Fulfilling Every Coffee Lover’s Dream
+                        </h1>
 
                         <h2 className="font-[700] my-2">Introduction:</h2>
                         <p>
@@ -1466,7 +1471,9 @@ const LandingPage = () => {
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
-                      <h1 className="mont-serif-bold text-xl">Increasing Sales of SalesUp!</h1>
+                      <h1 className="mont-serif-bold text-xl">
+                        Increasing Sales of SalesUp!
+                      </h1>
 
                       <h2 className="font-[700] my-2">Introduction:</h2>
                       <p>
@@ -1995,6 +2002,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
+<Bot/>
     </div>
   );
 };

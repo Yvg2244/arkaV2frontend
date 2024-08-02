@@ -18,6 +18,7 @@ import Footer from "./customComponents/Footer.tsx";
 import CategoryCard from "./customComponents/CategoryCard.tsx";
 import Blog from "./Blog.tsx";
 import LandingPage from "./landingPage/LandingPage.tsx";
+import Bot from "./Bot.tsx";
 // import axios from "axios";
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
           <Blog />
           <Toaster />
           <Footer />
+          <Bot/>
         </Provider>
       </PrimeReactProvider>
     ),
@@ -44,6 +46,8 @@ const router = createBrowserRouter([
         <Header />
         <BlogCard />
         <Footer />
+        <Bot/>
+
       </Provider>
     ),
   },
@@ -64,6 +68,8 @@ const router = createBrowserRouter([
         <CategoryCard />
         <Toaster />
         <Footer />
+        <Bot/>
+
       </Provider>
     ),
   },
