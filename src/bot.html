@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* CSS for chat bubble */
+        .chat-bubble {
+            position: fixed;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: #007bff; /* Example background color */
+            color: white;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+        .chat-bubble:hover {
+            transform: scale(1.05);
+        }
+
+        /* CSS for full screen overlay */
+        .chat-bubble.expanded {
+            width: 100vw; /* Full width of viewport */
+            height: 100vh; /* Full height of viewport */
+            top: 0;
+            left: 0;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            transition: transform 0.3s ease-in-out;
+            overflow: auto; /* Enable scrolling if content exceeds viewport */
+        }
+
+        .chat-bubble.expanded .close-button {
+            display: block; /* Show close button when expanded */
+        }
+
+        .chat-bubble .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: none; /* Initially hidden */
+            cursor: pointer;
+        }
+
+        /* Styles specific to Voiceglow content */
+        .vg-container {
+            display: none; /* Hide Voiceglow initially */
+            width: 100%; /* Adjust as needed */
+            height: 100%; /* Adjust as needed */
+        }
+
+        .vg-container.expanded {
+            display: block; /* Show Voiceglow when expanded */
+        }
+    </style>
+</head>
+<body>
+   <div>hello</div>
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+  <!-- Here is where Voiceglow renders the widget. -->
+  <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+<script defer>
+    (function() {
+        window.VG_CONFIG = {
+            ID: "fdibii1wc17xwtk3",
+            region: 'na', // 'eu' or 'na'corresponding to Europe and North America
+            render: 'popup', // popup or full-width
+            stylesheets: [
+                // Base Voiceglow CSS
+                "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/styles.css",
+                // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+            ],
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/vg_bundle.js";
+        document.body.appendChild(VG_SCRIPT);
+    })()
+</script>
+</body>
+</html>

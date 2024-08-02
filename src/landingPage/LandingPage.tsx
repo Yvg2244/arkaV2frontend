@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Twitter from "./assets/TwitterX.png";
 import { InlineWidget } from "react-calendly";
 import { MdEmail } from "react-icons/md";
+import Bot from "../Bot";
 import {
   Accordion,
   AccordionContent,
@@ -2001,6 +2002,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
+<Bot/>
     </div>
   );
 };
