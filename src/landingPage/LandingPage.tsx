@@ -48,8 +48,7 @@ import crown from "./assets/Crown.png";
 import rocket from "./assets/Rocket.png";
 import diamond from "./assets/Diamond.png";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
-
-
+import ChatBubble from "../components/section/ChatBubble.tsx";
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -135,6 +134,7 @@ const LandingPage = () => {
           <div className="logo  h-16 md:h-24 w-auto bg-white rounded-full p-2">
             <img src={logo} alt="Logo" className="h-full w-auto" />
           </div>
+          <ChatBubble />
           <nav className="hidden md:block md:flex">
             <ul className="flex space-x-8">
               <li>
