@@ -903,7 +903,7 @@ const LandingPage = () => {
         </div>
         <ul className="p-0 bg-[#7b0505]" id="cards">
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-top relative service-card clientcardbody md:mb-9 md:pb-8">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={elite} alt="Advertising" />
               </div>
@@ -925,7 +925,7 @@ const LandingPage = () => {
                   advertising.
                 </span>
                 <Dialog>
-                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
+                  <DialogTrigger className="lightbtn mt-4 mont-serif-regular">
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh]">
@@ -1097,7 +1097,7 @@ const LandingPage = () => {
                   Mboso's personal story and coffee's luxury appeal.
                 </span>
                 <Dialog>
-                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
+                  <DialogTrigger className="lightbtn mt-4 mont-serif-regular">
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
@@ -1247,7 +1247,7 @@ const LandingPage = () => {
             </div>
           </li>
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody md:mb-9 md:pb-8">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={saleup} alt="Advertising" />
               </div>
@@ -1268,7 +1268,7 @@ const LandingPage = () => {
                   increase in lead generation and a 100% rise in conversion.
                 </span>
                 <Dialog>
-                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
+                  <DialogTrigger className="lightbtn mt-4 mont-serif-regular">
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
@@ -1390,7 +1390,7 @@ const LandingPage = () => {
             </div>
           </li>
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody md:mb-9 md:pb-8">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={sharpEye} alt="Advertising" />
               </div>
@@ -1415,7 +1415,7 @@ const LandingPage = () => {
                   industry influence
                 </span>
                 <Dialog>
-                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
+                  <DialogTrigger className="lightbtn mt-4 mont-serif-regular">
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
