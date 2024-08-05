@@ -513,4 +513,14 @@ height: 300px;
   .cardDescription{
     font-size: 18px;
   } 
+  .text-3xl{
+    padding: 20px;
+    margin: 20px;
+  }
+  .h-\[400px\]{
+    height: 300px;
+  }
+  .container{
+    margin-top: 70px;
+  }
 }
