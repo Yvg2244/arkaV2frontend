@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Twitter from "./assets/TwitterX.png";
 import { InlineWidget } from "react-calendly";
 import { MdEmail } from "react-icons/md";
-import Bot from "../Bot";
+// import Bot from "../Bot";
 import {
   Accordion,
   AccordionContent,
@@ -1584,7 +1584,6 @@ const LandingPage = () => {
               </div>
             </div>
           </li>
-          
         </ul>
       </section>
       <div className="container bg-white max-w-none p-0 m-0">
@@ -2000,7 +1999,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
-      <Bot />
+      {/* <Bot /> */}
     </div>
   );
 };
