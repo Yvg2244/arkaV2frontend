@@ -1,47 +1,47 @@
-import {useState, useEffect} from 'react'
+import React, { useEffect } from "react";
 
-import bot from './assets/bot.png'
 
-const Bot = () => {
-    const [expanded, setExpanded] = useState(false);
-    useEffect(() => {
-        if (expanded) {
-          (function () {
-            window.VG_CONFIG = {
-              ID: 'fdibii1wc17xwtk3',
-              region: 'na',
-              render: 'popup',
-              stylesheets: [
-                'https://storage.googleapis.com/voiceglow-cdn/vg_live_build/styles.css',
-              ],
-            };
-            const VG_SCRIPT = document.createElement('script');
-            VG_SCRIPT.src = 'https://storage.googleapis.com/voiceglow-cdn/vg_live_build/vg_bundle.js';
-            document.body.appendChild(VG_SCRIPT);
-          })();
-        }
-      }, [expanded]);
-    
-    const toggleExpanded = () => {
-      setExpanded(!expanded);
+const ChatBubble: React.FC = () => {
+  useEffect(() => {
+    // Append the Voiceflow script to the document
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+    script.onload = () => {
+      (window as any).voiceflow.chat.load({
+        verify: { projectID: "669247f1ef5a6818a4ea085d" },
+        url: "https://general-runtime.voiceflow.com/",
+        versionID: "production",
+      }).then(() => {
+        setTimeout(() => {
+          if ((window as any).voiceflow && (window as any).voiceflow.chat) {
+            (window as any).voiceflow.chat.open(); // Show the chat
+          }
+        }, 1); // Adjust the delay as needed
+      });
     };
-  
-  return (
-    <div
-    className={`fixed bottom-5 right-5  text-white rounded-full p-4 shadow-lg cursor-pointer z-50 transition-transform transform ${
-      expanded ? 'scale-100 w-[400px] bg-transparent h-full top-0 right-0 rounded-none' : 'hover:scale-105'
-    }`}
-    onClick={toggleExpanded}
-  >
-    {expanded ? (
-      
-        <div id="VG_OVERLAY_CONTAINER" className="w-fit h-fit"></div>
-      
-    ) : (
-      <div className='h-11 w-11 rounded-full overflow-hidden'><img src={bot} className='w-full h-full object-cover' alt="" /></div>
-    )}
-  </div>
-  )
-}
+    const s = document.getElementsByTagName("script")[0];
+    if (s && s.parentNode) {
+      s.parentNode.insertBefore(script, s);
+    }
 
-export default Bot
+    // Cleanup script on component unmount
+   
+  }, []);
+
+  return (
+    <div>
+      <div style={{ width: 0, height: 0 }} id="VG_OVERLAY_CONTAINER">
+        
+      </div>
+      <div className="chat-bubble">
+        <button className="close-button">X</button>
+        <div className="vg-container">
+         
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ChatBubble;

@@ -48,7 +48,6 @@ import crown from "./assets/Crown.png";
 import rocket from "./assets/Rocket.png";
 import diamond from "./assets/Diamond.png";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
-import ChatBubble from "../components/section/ChatBubble.tsx";
 import f1 from "./assets/founder1.png";
 import f2 from "./assets/founder2.png";
 const LandingPage = () => {
@@ -133,10 +132,9 @@ const LandingPage = () => {
     <div className="">
       <header className="relative mont-serif-regular">
         <div className="navbar flex items-center justify-between px-8 py-4 bg-[#7b0505] text-white">
-          <div className="logo  h-16 md:h-24 w-auto bg-white rounded-full p-2">
+          <div className="logo w-16 h-16 md:h-[70px] md:w-[70px] bg-white rounded-full p-2">
             <img src={logo} alt="Logo" className="h-full w-auto" />
           </div>
-          <ChatBubble />
           <nav className="hidden md:block md:flex">
             <ul className="flex space-x-8">
               <li>
@@ -593,7 +591,7 @@ const LandingPage = () => {
               id="service"
               className="card-body flex flex-col md:flex-row items-center relative service-card"
             >
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={marketing} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -618,7 +616,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card2">
             <div className="card-body items-center md:flex-row-reverse relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={contentCreation} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
@@ -645,7 +643,7 @@ const LandingPage = () => {
 
           <li className="card " id="card3">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={salesSection} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df ">
@@ -671,7 +669,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card4">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={social} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -697,7 +695,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card5">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={se} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -724,7 +722,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card2">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={image} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -751,7 +749,7 @@ const LandingPage = () => {
 
           <li className="card " id="card3">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={salesSection} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -776,7 +774,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card4">
             <div className="card-body flex flex-col md:flex-row-reverse items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={aiSe} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -802,7 +800,7 @@ const LandingPage = () => {
           </li>
           <li className="card " id="card1">
             <div className="card-body flex flex-col md:flex-row items-center relative service-card">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[400px] lg:h-[250px] xl:h-[400px] z-[10] aspect-square client">
                 <img src={developement} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -1780,7 +1778,7 @@ for you sites and other platforms,
               <InlineWidget url="https://calendly.com/arkaconsultancyandco/30min?text_color=636262&primary_color=7b0505" />
             </div>
 
-            <div className="faq  max-w-[600px] flex-1">
+            <div className="faq w-[90vw] max-w-[600px] flex-1">
               <h3 className="text-xl md:text-[28px] pop font-bold mb-4">
                 FREQUENTLY ASKED QUESTIONS
               </h3>
