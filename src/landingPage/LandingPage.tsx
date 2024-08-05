@@ -928,10 +928,10 @@ const LandingPage = () => {
                   <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
                     Read More
                   </DialogTrigger>
-                  <DialogContent className="h-[90vh] [text-shadow:none]">
-                    <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
-                      <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">
+                  <DialogContent className="h-[90vh]">
+                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
+                      <div className="case-study" >
+                        <h1 className="mont-serif-bold text-xl text-shadow-none text-red-500">
                           EliteGroup Finances: Transitioning to the Digital Era
                         </h1>
 
@@ -1103,7 +1103,7 @@ const LandingPage = () => {
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">
+                        <h1 className="mont-serif-bold text-xl text-red-500">
                           Fulfilling Every Coffee Lover’s Dream
                         </h1>
 
@@ -1273,7 +1273,7 @@ const LandingPage = () => {
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
                     <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
-                      <h1 className="mont-serif-bold text-xl">
+                      <h1 className="mont-serif-bold text-xl text-red-500">
                         Increasing Sales of SalesUp!
                       </h1>
 
@@ -1419,9 +1419,9 @@ const LandingPage = () => {
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
-                    <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
+                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
                       <div className="case-study">
-                        <h1 className="mont-serif-bold text-xl">
+                        <h1 className="mont-serif-bold text-xl text-red-500">
                           Shaping the Digital World’s Security: Sharp Eye
                           Solution Company (SESC)
                         </h1>
