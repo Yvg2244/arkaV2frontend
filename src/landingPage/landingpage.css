@@ -470,3 +470,11 @@ ul.animate-scroll li {
     height: fit-content;
   }
 }
+@media  (min-width:1024px) and (max-width:1200px) {
+ .client img{
+height: 300px;
+ }
+ .clientcardDescription{
+  width: 90vw;
+ }
+}

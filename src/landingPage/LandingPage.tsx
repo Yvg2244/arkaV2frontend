@@ -904,7 +904,7 @@ const LandingPage = () => {
         <ul className="p-0 bg-[#7b0505]" id="cards">
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={elite} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
@@ -915,7 +915,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Elite Group Finances
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription w-[90vw] lg:w-[600px]  mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
                   EliteGroup Finances, originally an offline financial auditing
                   firm, partnered with Revibe Academy to transition successfully
                   into the online sphere. Challenges included limited online
@@ -1077,7 +1077,7 @@ const LandingPage = () => {
           </li>
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
+              <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={mboso} alt="Advertising" />
               </div>
               <div className="SecText flex flex-col items-center text-white max-w-[480px]">
@@ -1088,7 +1088,7 @@ const LandingPage = () => {
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Moboso Enterprises
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription w-[90vw] lg:w-[600px] mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
                   Mboso, a former software engineer turned coffee entrepreneur,
                   sought to enhance his coffee brand's Instagram presence.
                   Initially focused solely on design services, he faced
@@ -1246,21 +1246,163 @@ const LandingPage = () => {
               </div>
             </div>
           </li>
-
           <li className="card clientcard" id="card1">
             <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={sharpEye} alt="Advertising" />
+              <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
+                <img src={saleup} alt="Advertising" />
               </div>
-              <div className="SecText flex flex-col items-center text-white max-w-[480px]">
+              <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
                   03
                 </span>
 
                 <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
+                  Sales Up Co
+                </span>
+                <span className="clientcardDescription w-[90vw] lg:w-[600px] mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                  SaleUp, an Indian startup struggles initially with unfocused
+                  social media efforts lacking branding, engagement and content
+                  strategy. Revibe Academy intervened implenting targeted
+                  strategies, branding and a cohesive content plan. Within
+                  weeks, followers and engagement surged, leading to a 300%
+                  increase in lead generation and a 100% rise in conversion.
+                </span>
+                <Dialog>
+                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
+                    Read More
+                  </DialogTrigger>
+                  <DialogContent className="h-[90vh] [text-shadow:none]">
+                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
+                      <h1 className="mont-serif-bold text-xl">
+                        Increasing Sales of SalesUp!
+                      </h1>
+
+                      <h2 className="font-[700] my-2">Introduction:</h2>
+                      <p>
+                        This is the case of SalesUp, an Indian startup with a
+                        vision to revolutionize affiliate marketing. The startup
+                        owners were already trying for a year before they
+                        approached us. They were trying to build a social media
+                        profile but it was a mess. As they told us about their
+                        goals, we started analyzing their social media. They
+                        wanted to generate leads through social media.
+                      </p>
+
+                      <h2 className="font-[700] my-2">Challenges:</h2>
+                      <p>
+                        We figured out the problems they were having. They were
+                        the following:
+                      </p>
+                      <ul>
+                        <li>Their posts weren’t niche-specific.</li>
+                        <li>They didn’t have any branding whatsoever.</li>
+                        <li>They had no theme in colour or design.</li>
+                        <li>They did no engagement whatsoever.</li>
+                        <li>There was no content strategy.</li>
+                        <li>
+                          The posts were not informative and eye-grabbing.
+                        </li>
+                        <li>There was no regularity in posting.</li>
+                        <li>And a few more.</li>
+                      </ul>
+
+                      <h2 className="font-[700] my-2">Our Approach:</h2>
+                      <ol>
+                        <li>
+                          <strong>New Strategies:</strong> We made new social
+                          media strategies for them and started experimenting.
+                          We understood their ideal audience and framed our
+                          strategies accordingly.
+                        </li>
+                        <li>
+                          <strong>Branding:</strong> We specifically designed
+                          posts for them and with their approval, chose the
+                          branding colours and designs. At first, they were
+                          dubious about us. We changed things and that is always
+                          a pain point. But we asked them to trust us and give
+                          us some time.
+                        </li>
+                        <li>
+                          <strong>Content Strategy:</strong> With this, we made
+                          a content strategy for a week and developed a few
+                          posts. These posts were informative and explained what
+                          affiliate marketing is and its various factors.
+                        </li>
+                        <li>
+                          <strong>Developing a CTA:</strong> They lacked a
+                          Call-to-action in their posts. They simply used to put
+                          in their phone numbers. But we changed that to
+                          directing potential leads towards their website.
+                        </li>
+                        <li>
+                          <strong>Social Media Management:</strong> There were
+                          other improvements like story posting, DMs, and
+                          engaging with followers and other creators.
+                        </li>
+                      </ol>
+
+                      <h2 className="font-[700] my-2">Results:</h2>
+                      <ul>
+                        <li>
+                          Within a week of rebranding and changing their social
+                          media, their followers increased and so did their
+                          likes and comments. But they weren’t happy with the
+                          results. Their goal was lead generation, not to gain
+                          followers and accumulate likes. But we reassured them
+                          that it was part of our strategy. Engagement is the
+                          first step towards lead generation. This was the time
+                          of make or break. But SalesUp chose to trust us and
+                          give us more time. This decision turned out to be a
+                          breakthrough for them.
+                        </li>
+                        <li>
+                          Within the next two weeks, their lead generation saw a
+                          massive rise of 300% and their conversions also
+                          increased by 100%.
+                        </li>
+                        <li>
+                          They had 150 people working with them before our
+                          services and after a month of working with us, they
+                          had a network of 500+ people.
+                        </li>
+                      </ul>
+
+                      <h2 className="font-[700] my-2">Conclusion:</h2>
+                      <p>
+                        These specific strategies for things that most people
+                        ignore and that SalesUp was ignoring too, helped the
+                        company to get to new heights fast.
+                      </p>
+                      <p>
+                        This is one out of many success stories that we were a
+                        part of, as Revibe Academy. As months passed by, we
+                        started getting offers from foreign startups as well.
+                        This brought us a new challenge. These companies
+                        required services, ideas, and methods that were
+                        different from the Indian startup space. This helped us
+                        broaden our vision. One such company was Mboso
+                        Enterprises.
+                      </p>
+                    </ScrollArea>
+                  </DialogContent>
+                </Dialog>
+              </div>
+            </div>
+          </li>
+          <li className="card clientcard" id="card1">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
+              <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
+                <img src={sharpEye} alt="Advertising" />
+              </div>
+              <div className="SecText flex flex-col items-center text-white max-w-[480px]">
+                <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
+                  04
+                </span>
+
+                <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
                   Sharp Eye
                 </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
+                <span className="clientcardDescription w-[90vw] lg:w-[600px] mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
                   At Arka Consultancy, our journey with Sharp Eye Solution
                   Company (SESC) transformed their digital security approach.
                   Initially challenged by ineffective marketing and visibility
@@ -1442,149 +1584,7 @@ const LandingPage = () => {
               </div>
             </div>
           </li>
-          <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
-              <div className="SecImg h-[200px] md:h-[400px] lg:h-[500px] z-[10] aspect-square client">
-                <img src={saleup} alt="Advertising" />
-              </div>
-              <div className="SecText flex flex-col items-center text-white max-w-[480px] df">
-                <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
-                  04
-                </span>
-
-                <span className="clietncardTitle SecText-head mont-serif-bold text-[30px] lg:text-[40px] uppercase">
-                  Sales Up Co
-                </span>
-                <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
-                  SaleUp, an Indian startup struggles initially with unfocused
-                  social media efforts lacking branding, engagement and content
-                  strategy. Revibe Academy intervened implenting targeted
-                  strategies, branding and a cohesive content plan. Within
-                  weeks, followers and engagement surged, leading to a 300%
-                  increase in lead generation and a 100% rise in conversion.
-                </span>
-                <Dialog>
-                  <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
-                    Read More
-                  </DialogTrigger>
-                  <DialogContent className="h-[90vh] [text-shadow:none]">
-                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] w-[full] rounded-md border p-4 ">
-                      <h1 className="mont-serif-bold text-xl">
-                        Increasing Sales of SalesUp!
-                      </h1>
-
-                      <h2 className="font-[700] my-2">Introduction:</h2>
-                      <p>
-                        This is the case of SalesUp, an Indian startup with a
-                        vision to revolutionize affiliate marketing. The startup
-                        owners were already trying for a year before they
-                        approached us. They were trying to build a social media
-                        profile but it was a mess. As they told us about their
-                        goals, we started analyzing their social media. They
-                        wanted to generate leads through social media.
-                      </p>
-
-                      <h2 className="font-[700] my-2">Challenges:</h2>
-                      <p>
-                        We figured out the problems they were having. They were
-                        the following:
-                      </p>
-                      <ul>
-                        <li>Their posts weren’t niche-specific.</li>
-                        <li>They didn’t have any branding whatsoever.</li>
-                        <li>They had no theme in colour or design.</li>
-                        <li>They did no engagement whatsoever.</li>
-                        <li>There was no content strategy.</li>
-                        <li>
-                          The posts were not informative and eye-grabbing.
-                        </li>
-                        <li>There was no regularity in posting.</li>
-                        <li>And a few more.</li>
-                      </ul>
-
-                      <h2 className="font-[700] my-2">Our Approach:</h2>
-                      <ol>
-                        <li>
-                          <strong>New Strategies:</strong> We made new social
-                          media strategies for them and started experimenting.
-                          We understood their ideal audience and framed our
-                          strategies accordingly.
-                        </li>
-                        <li>
-                          <strong>Branding:</strong> We specifically designed
-                          posts for them and with their approval, chose the
-                          branding colours and designs. At first, they were
-                          dubious about us. We changed things and that is always
-                          a pain point. But we asked them to trust us and give
-                          us some time.
-                        </li>
-                        <li>
-                          <strong>Content Strategy:</strong> With this, we made
-                          a content strategy for a week and developed a few
-                          posts. These posts were informative and explained what
-                          affiliate marketing is and its various factors.
-                        </li>
-                        <li>
-                          <strong>Developing a CTA:</strong> They lacked a
-                          Call-to-action in their posts. They simply used to put
-                          in their phone numbers. But we changed that to
-                          directing potential leads towards their website.
-                        </li>
-                        <li>
-                          <strong>Social Media Management:</strong> There were
-                          other improvements like story posting, DMs, and
-                          engaging with followers and other creators.
-                        </li>
-                      </ol>
-
-                      <h2 className="font-[700] my-2">Results:</h2>
-                      <ul>
-                        <li>
-                          Within a week of rebranding and changing their social
-                          media, their followers increased and so did their
-                          likes and comments. But they weren’t happy with the
-                          results. Their goal was lead generation, not to gain
-                          followers and accumulate likes. But we reassured them
-                          that it was part of our strategy. Engagement is the
-                          first step towards lead generation. This was the time
-                          of make or break. But SalesUp chose to trust us and
-                          give us more time. This decision turned out to be a
-                          breakthrough for them.
-                        </li>
-                        <li>
-                          Within the next two weeks, their lead generation saw a
-                          massive rise of 300% and their conversions also
-                          increased by 100%.
-                        </li>
-                        <li>
-                          They had 150 people working with them before our
-                          services and after a month of working with us, they
-                          had a network of 500+ people.
-                        </li>
-                      </ul>
-
-                      <h2 className="font-[700] my-2">Conclusion:</h2>
-                      <p>
-                        These specific strategies for things that most people
-                        ignore and that SalesUp was ignoring too, helped the
-                        company to get to new heights fast.
-                      </p>
-                      <p>
-                        This is one out of many success stories that we were a
-                        part of, as Revibe Academy. As months passed by, we
-                        started getting offers from foreign startups as well.
-                        This brought us a new challenge. These companies
-                        required services, ideas, and methods that were
-                        different from the Indian startup space. This helped us
-                        broaden our vision. One such company was Mboso
-                        Enterprises.
-                      </p>
-                    </ScrollArea>
-                  </DialogContent>
-                </Dialog>
-              </div>
-            </div>
-          </li>
+          
         </ul>
       </section>
       <div className="container bg-white max-w-none p-0 m-0">
