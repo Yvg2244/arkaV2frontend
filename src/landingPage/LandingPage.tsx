@@ -49,6 +49,8 @@ import rocket from "./assets/Rocket.png";
 import diamond from "./assets/Diamond.png";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import ChatBubble from "../components/section/ChatBubble.tsx";
+import f1 from "./assets/founder1.png";
+import f2 from "./assets/founder2.png";
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -896,7 +898,7 @@ const LandingPage = () => {
         </div>
 
         <div
-          className="text-xl text-center font-bold py-4 text-red-600 mont-serif-regular"
+          className="text-2xl text-center font-bold py-4 text-red-600 mont-serif-bold"
           style={{ color: "#7b0505" }}
         >
           Our Clients
@@ -1456,14 +1458,12 @@ const LandingPage = () => {
                   Sales Up Co
                 </span>
                 <span className="clientcardDescription mont-serif-regular text-justify text-[14px] h-fit md:h-auto md:text-[20px]">
-                  The #1 automated marketing tool for email database expansion
-                  This web app specializes in enhancing the customer experience,
-                  and adding marketing value to events and venue owners! The
-                  VideoBoxis a sleek, customizable photo frame that lights up,
-                  and with a tap of your finger allows users to record a fun,
-                  social media friendly GIF. The software allows for a fun and
-                  easy way to capture emails, grow your social media following
-                  organically, and up-sell your audience in real time.
+                  SaleUp, an Indian startup struggles initially with unfocused
+                  social media efforts lacking branding, engagement and content
+                  strategy. Revibe Academy intervened implenting targeted
+                  strategies, branding and a cohesive content plan. Within
+                  weeks, followers and engagement surged, leading to a 300%
+                  increase in lead generation and a 100% rise in conversion.
                 </span>
                 <Dialog>
                   <DialogTrigger className="lightbtn mt-8 mont-serif-regular">
@@ -1726,13 +1726,13 @@ for you sites and other platforms,
               {
                 name: "Mr. Bhavya Sharma",
                 title: "Chief Executive Officer and Founder",
-                image: "./assets/founder2.png",
+                image: f2,
                 email: "bhavya@arkaconsultancy.xyz",
               },
               {
                 name: "Mr. Achit Parmar",
                 title: "Chief Operating Officer",
-                image: "./assets/founder1.png",
+                image: f1,
                 email: "achit@arkaconsultancy.xyz",
               },
             ].map((founder, index) => (
@@ -2002,7 +2002,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
-<Bot/>
+      <Bot />
     </div>
   );
 };
