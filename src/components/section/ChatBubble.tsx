@@ -5,6 +5,8 @@ const ChatBubble: React.FC = () => {
   useEffect(() => {
     const initializeVoiceflow = () => {
       const voiceflow = (window as any).voiceflow;
+      console.log("Voiceflow object:", voiceflow); // Log to check if Voiceflow is available
+
       if (voiceflow && voiceflow.chat) {
         voiceflow.chat
           .load({
@@ -13,11 +15,12 @@ const ChatBubble: React.FC = () => {
             versionID: "production",
           })
           .then(() => {
+            // Ensure chat opens after loading
             setTimeout(() => {
-              if (voiceflow.chat && !voiceflow.chat.isOpen()) {
+              if (voiceflow.chat) {
                 voiceflow.chat.open(); // Show the chat
               }
-            }, 0); // Adjust the delay as needed
+            }, 1000); // Adjust the delay if needed
           })
           .catch((error: Error) => {
             console.error("Error loading Voiceflow chat:", error);
@@ -38,6 +41,9 @@ const ChatBubble: React.FC = () => {
       script.type = "text/javascript";
       script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
       script.onload = initializeVoiceflow;
+      script.onerror = () => {
+        console.error("Error loading Voiceflow script.");
+      };
       const s = document.getElementsByTagName("script")[0];
       if (s && s.parentNode) {
         s.parentNode.insertBefore(script, s);
