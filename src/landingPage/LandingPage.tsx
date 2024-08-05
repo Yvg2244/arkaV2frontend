@@ -1584,7 +1584,6 @@ const LandingPage = () => {
               </div>
             </div>
           </li>
-          
         </ul>
       </section>
       <div className="container bg-white max-w-none p-0 m-0">
@@ -2000,7 +1999,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
-      <Bot />
+      {/* <Bot /> */}
     </div>
   );
 };

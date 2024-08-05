@@ -23,7 +23,12 @@ import ChatBubble from "./components/section/ChatBubble.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
+    element: (
+      <PrimeReactProvider>
+        <LandingPage />
+        <ChatBubble />
+      </PrimeReactProvider>
+    ),
   },
   {
     path: "/blog",
