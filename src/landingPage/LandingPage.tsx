@@ -1390,7 +1390,7 @@ const LandingPage = () => {
             </div>
           </li>
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody md:mb-9 md:pb-8">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody max-h-[200px] ">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={sharpEye} alt="Advertising" />
               </div>
@@ -1587,12 +1587,12 @@ const LandingPage = () => {
         </ul>
       </section>
       <div className="container bg-white max-w-none p-0 m-0">
-        <div className="bg-[white] text-black testimonial-section prodsection py-8">
-          <div className="sub-heading  text-center mb-12">
+        <div className="bg-[white] text-black testimonial-section prodsection md:mt-20">
+          <div className="sub-heading  text-center mb-8">
             <h2 className=" text-3xl font-bold">Our Products</h2>
           </div>
 
-          <div className="testimonial bg-[white] flex flex-wrap justify-center gap-1">
+          <div className="testimonial bg-[white] flex flex-wrap justify-center md:gap-1">
             {[
               {
                 name: "LEAD GEN BOT",

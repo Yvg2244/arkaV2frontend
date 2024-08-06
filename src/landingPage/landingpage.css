@@ -92,7 +92,7 @@
 	height: 400px;
 	background: white;
   color: #7b0505 ;
-	margin: 20px;
+	margin: 0 20px;
 	/* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); */
 	border-radius: 15px;
 	display: flex;
@@ -250,7 +250,7 @@
   padding: 20px 20px;
   justify-content: space-around;
   max-width: 70rem;
-  min-height: 100vh;
+  min-height: 70vh;
   background: white;
   
 
