@@ -1390,11 +1390,11 @@ const LandingPage = () => {
             </div>
           </li>
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody ">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={sharpEye} alt="Advertising" />
               </div>
-              <div className="SecText flex flex-col items-center text-white max-w-[480px]">
+              <div className="SecText flex flex-col items-center text-white max-w-[380px]">
                 <span className=" clietnSecText-num otlline  rale absolute top-0 left-0 text-black">
                   04
                 </span>
@@ -1586,7 +1586,7 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
-      <div className="container bg-white max-w-none p-0 m-0">
+      <div className="container bg-white max-w-none lg:relative -top-8">
         <div className="bg-[white] text-black testimonial-section prodsection md:mt-20">
           <div className="sub-heading  text-center mb-8">
             <h2 className=" text-3xl font-bold">Our Products</h2>

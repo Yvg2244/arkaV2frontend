@@ -243,7 +243,7 @@
 }
 .clientcardbody:nth-child(odd) {
   width: 100vw;
-  height: 500x;
+  height: 500px;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -408,7 +408,7 @@ padding-bottom: 10px;
 .clientcard,clientcardbody{
   background-color: white;
   color: #0A0A0A;
-  height: 700px;
+  height: 480px;
 }
 .clietncardTitle,.clientcardDescription{
   color: black;
@@ -467,7 +467,7 @@ ul.animate-scroll li {
 @media screen and (max-width:600px) {
   .clientcard,clientcardbody{
    
-    height: fit-content;
+    height: 480px;
   }
 }
 @media  (min-width:1024px) and (max-width:1200px) {
