@@ -1390,7 +1390,7 @@ const LandingPage = () => {
             </div>
           </li>
           <li className="card clientcard" id="card1">
-            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody max-h-[200px] ">
+            <div className="card-body   bg-white flex flex-col md:flex-row items-center relative service-card clientcardbody ">
               <div className="SecImg h-[200px] md:h-[250px] lg:h-[500px] z-[10] aspect-square client">
                 <img src={sharpEye} alt="Advertising" />
               </div>
