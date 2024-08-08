@@ -104,7 +104,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="text-[32px]  w-full text-center pt-serif-bold">
-          <Link to="/">Arka Blogs</Link>
+          <Link to="/">ARKA BLOGS</Link>
         </div>
         <div className="hidden lg:block">
           <SearchBoxx />

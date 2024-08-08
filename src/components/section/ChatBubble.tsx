@@ -16,11 +16,11 @@ const ChatBubble: React.FC = () => {
           })
           .then(() => {
             // Ensure chat opens after loading
-            setTimeout(() => {
-              if (voiceflow.chat) {
-                voiceflow.chat.open(); // Show the chat
-              }
-            }, 1000); // Adjust the delay if needed
+            // setTimeout(() => {
+            //   if (voiceflow.chat) {
+            //     voiceflow.chat.open(); // Show the chat
+            //   }
+            // }, 1000); // Adjust the delay if needed
           })
           .catch((error: Error) => {
             console.error("Error loading Voiceflow chat:", error);

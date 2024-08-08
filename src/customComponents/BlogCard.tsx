@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import {
   Card,
   CardContent,
@@ -23,17 +23,17 @@ const BlogCard = () => {
   const [blogData, setBlogData] = useState<any>([]);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  function formatDate(isoString:any) {
+  function formatDate(isoString: any) {
     const date = new Date(isoString);
-  
+
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
     // const hours = String(date.getHours()).padStart(2, '0');
     // const minutes = String(date.getMinutes()).padStart(2, '0');
     // const seconds = String(date.getSeconds()).padStart(2, '0');
-  
+
     return `${year}-${month}-${day}`;
   }
   useEffect(() => {
@@ -64,7 +64,7 @@ const BlogCard = () => {
 
   return (
     <div className="col-span-8 grid justify-center">
-      <Card className='max-w-[800px] w-[100vw]'>
+      <Card className="max-w-[900px] w-[100vw]">
         <CardHeader className="grid grid-cols-2">
           {loading ? (
             <>
@@ -80,7 +80,7 @@ const BlogCard = () => {
                 {data?.category}
               </CardDescription>
               <CardDescription className=" w-full text-right text-muted-foreground   pb-1">
-                {data?.date?formatDate(data.date):"Fetching Date"}
+                {data?.date ? formatDate(data.date) : "Fetching Date"}
               </CardDescription>
               <CardTitle className="col-span-2 text-[32px] mont-serif-bold font-bold">
                 {data?.title}
@@ -89,7 +89,7 @@ const BlogCard = () => {
                 {data?.subtitle}
               </CardDescription>
               <CardDescription className="col-span-2 text-[14px] pt-serif-regular font-semibold text-[#AF0D0D]">
-                By <br/>
+                By <br />
                 {data?.author}
               </CardDescription>
             </>
@@ -100,11 +100,14 @@ const BlogCard = () => {
             <Skeleton className="h-64 w-full mb-4" />
           ) : (
             <>
-              <img
-                className="max-w-[100%] w-[100vw]"
-                src={data?.image}
-                alt="Blog visual"
-              />
+              <div className="flex justify-center">
+                <img
+                  src={data?.image}
+                  className="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 h-auto"
+                  alt="Example Image"
+                />
+              </div>
+
               <div className="px-4 py-2 pb-4 border-b-2 border-2 border-b-gray-200 text-[14px] text-gray-400">
                 {data?.imageCredit}
               </div>
