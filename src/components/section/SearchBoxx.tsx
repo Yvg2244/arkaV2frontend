@@ -29,7 +29,7 @@ const SearchBoxx = () => {
         const exactData = response.data.message.exactMatch;
         const relatedData = response.data.message.similarBlogs;
         const relevantBlogs = [exactData, ...relatedData].filter(Boolean);
-        
+
         setOptions(relevantBlogs);
         console.log(options);
         setDropdownVisible(true);
@@ -58,7 +58,7 @@ const SearchBoxx = () => {
   };
 
   return (
-    <div className="relative w-full right-[10px] border-[2px] rounded-[5px] border-white ">
+    <div className="relative w-full right-[10px] border-[2px] rounded-[10px] border-r-white">
       <Input
         className="pl-10 pr-4 py-2 text-white  border-none placeholder:text-white bg-transparent rounded-lg"
         type="text"

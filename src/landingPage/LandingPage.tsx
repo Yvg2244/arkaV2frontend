@@ -258,6 +258,7 @@ const LandingPage = () => {
           </div>
         </div>
       </header>
+
       <section
         id="home"
         className="relative overflow-hidden bg-[#7b0505] flex flex-col lg:flex-row items-center justify-between  h-fit min-h-[100vh] p-8 lg:p-16 hero"
@@ -289,6 +290,7 @@ const LandingPage = () => {
           />
         </div>
       </section>
+
       <section className="section lg:px-32 flex flex-col items-center mont-serif-regular relative py-16 sm:px-20 ">
         <div className="text-lg mb-4 text-[#7b0505] mont-serif-bold">
           Who we are?
@@ -825,6 +827,7 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
+
       <section id="about" className="py-4 px-2 bg-white">
         <div className="sub-heading">
           <div
@@ -1586,6 +1589,7 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
+
       <div className="container bg-white max-w-none p-0 m-0">
         <div className="bg-[white] text-black testimonial-section prodsection py-8">
           <div className="sub-heading  text-center mb-12">
@@ -1710,6 +1714,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
+
       <div className="container bg-white max-w-none p-0 m-0">
         <div className="bg-[#7b0505] text-white testimonial-section py-8">
           <div className="sub-heading  text-center mb-12">
