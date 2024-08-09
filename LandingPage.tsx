@@ -929,7 +929,7 @@ const LandingPage = () => {
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
-                    <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
+                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] drop-shadow-none w-[full] rounded-md border p-4 ">
                       <div className="case-study">
                         <h1 className="mont-serif-bold text-xl">
                           EliteGroup Finances: Transitioning to the Digital Era
@@ -1419,7 +1419,7 @@ const LandingPage = () => {
                     Read More
                   </DialogTrigger>
                   <DialogContent className="h-[90vh] [text-shadow:none]">
-                    <ScrollArea className="h-[full] overflow-auto text-shadow-none drop-shadow-none w-[full] rounded-md border p-4 ">
+                    <ScrollArea className="h-[full] overflow-auto [text-shadow:none] drop-shadow-none w-[full] rounded-md border p-4 ">
                       <div className="case-study">
                         <h1 className="mont-serif-bold text-xl">
                           Shaping the Digital World’s Security: Sharp Eye
@@ -1586,10 +1586,10 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
-      <div className="container bg-white max-w-none p-0 -m-10 mx-auto">
+      <div className="container bg-white max-w-full lg:pt-50 md:pt-52 sm:pt-52 p-0 sm:block m-10 mx-auto">
         <div className="bg-[white] text-black testimonial-section prodsection py-5">
-          <div className="sub-heading  text-center mb-12">
-            <h2 className=" text-3xl font-bold">Our Products</h2>
+          <div className="sub-heading text-center mb-12">
+            <h2 className="absolte text-3xl font-bold">Our Products</h2>
           </div>
 
           <div className="testimonial bg-[white] flex flex-wrap justify-center gap-1 -mt-16 -pt-10">
@@ -1681,7 +1681,7 @@ for you sites and other platforms,
             ].map((founder, index) => (
               <div
                 key={index}
-                className="relative h-[400px] founder-container"
+                className="relative h-[300px] founder-container -mb-2"
               >
                 <div className="card">
                   <div className="content">
@@ -1710,7 +1710,7 @@ for you sites and other platforms,
           </div>
         </div>
       </div>
-      <div className="container bg-white max-w-none p-0 m-0 mt-10">
+      <div className="container bg-white max-w-none p-0 pt-20 m-0 mt-10">
         <div className="bg-[#7b0505] text-white testimonial-section py-8">
           <div className="sub-heading  text-center mb-12">
             <h2 className=" text-3xl font-bold mt-4">
